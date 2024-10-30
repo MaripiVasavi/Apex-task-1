@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #ff6f61; /* A warm color for the header */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-title {
+    font-family: 'Cursive', sans-serif; /* Unique font style */
+    font-size: 48px;
+    margin: 0;
+}
+
+.welcome-message {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffd700; /* Change color for the welcome message */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #ff6f61;
+}
+
+.menu-icon {
+    width: 30px; /* Adjust size as needed */
+    vertical-align: middle; /* Aligns the icon with the text */
+    margin-left: 10px; /* Space between text and icon */
+}
+
+.category {
+    margin: 20px 0;
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category h3 {
+    color: #ff6f61;
+    margin: 0;
+}
+
+.tiffins-list, .lunch-options, .desserts-options {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+}
+
+.tiffin-item, .dish {
+    display: flex;
+    justify-content: space-between; /* Space out names and prices */
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold; /* Make the price stand out */
+}
+
+button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px; /* Add space above buttons */
+}
+
+button:hover {
+    background: #e65c50; /* Darker shade on hover */
+}
+
+
+
+
+.dish-image {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    max-width: 800px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.dish1 {
+    width: 100%; /* Full width for each dish item */
+    margin: 10px 0; /* Vertical spacing */
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dish1 img {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensure image covers the box without distortion */
+}
+
+.dish1 p {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.veg-heading, .nonveg-heading {
+    color: green; /* Color for Veg and Non-Veg headings */
+}
+
+h4 {
+    margin: 10px 0 5px; /* Margin for section headings */
+    color: #ff6f61; /* Color for section headings */
+}
+
+h5 {
+    margin: 0; /* Remove margin for dish names */
+    color: #333; /* Darker color for dish names */
+}
