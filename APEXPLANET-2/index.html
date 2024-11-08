@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sanctuary Virtual Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#wildlife" class="nav-link">Wildlife</a></li>
+                <li><a href="#conservation" class="nav-link">Conservation Efforts</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="grid-item">
+            <h2>Welcome to the Wildlife Sanctuary</h2>
+            <p>Embark on a virtual adventure into the wilderness. Explore diverse habitats, learn about conservation efforts, and discover the beauty of our planet's wildlife.</p>
+        </section>
+
+        <!-- Wildlife Section -->
+        <section id="wildlife" class="grid-item">
+            <h2>Wildlife Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/1.jpg" alt="Tiger in Forest">
+                <img src="assets/2.jpg" alt="Eagle in Sky">
+                <img src="assets/3.jpg" alt="Dolphin in Ocean">
+                <img src="assets/4.jpg" alt="Panda in Bamboo Forest">
+                <img src="assets/5.jpg" alt="Elephant in Savannah">
+                <img src="assets/6.jpg" alt="Wolf in Snow">
+            </div>
+        </section>
+
+        <!-- Conservation Section -->
+        <section id="conservation" class="grid-item">
+            <h2>Conservation Efforts</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Habitat Preservation</h3>
+                    <img src="assets/a.jpg" alt="Habitat Preservation">
+                    <p>Protecting natural habitats to ensure wildlife thrives.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wildlife Rescue</h3>
+                    <img src="assets/b.jpg" alt="Wildlife Rescue">
+                    <p>Rescuing and rehabilitating injured or orphaned animals.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Endangered Species Protection</h3>
+                    <img src="assets/c.jpg" alt="Endangered Species">
+                    <p>Efforts to protect and revive endangered species.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Community Education</h3>
+                    <img src="assets/d.jpg" alt="Community Education">
+                    <p>Educating communities on the importance of conservation.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wildlife Adoption</h3>
+                    <img src="assets/e.jpg" alt="Wildlife Adoption">
+                    <p>Symbolic adoption programs to support wildlife care.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="grid-item">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Create Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="imageSection" class="grid-item" style="display:none;">
+            <h2>Submit an Image</h2>
+            <form id="imageForm">
+                <input type="url" id="imageUrl" placeholder="Paste Image URL" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="imagePreview" style="margin-top: 20px;">
+                <!-- The image will be displayed here after submission -->
+            </div>
+        </section>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
