@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sanctuary Virtual Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#quiz-section" class="nav-link">Quiz</a></li>
+                <li><a href="#joke-section" class="nav-link">Joke</a></li>
+                <li><a href="#weather-section" class="nav-link">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="grid-item">
+            <h2>Welcome to the Wildlife Sanctuary</h2>
+            <p>Embark on a virtual adventure into the wilderness. Explore diverse habitats, learn about conservation efforts, and discover the beauty of our planet's wildlife.</p>
+        </section>
+
+        <section id="gallery" class="grid-item">
+            <h2>Wildlife Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/1.jpg" alt="Tiger in Forest">
+                <img src="assets/2.jpg" alt="Eagle in Sky">
+                <img src="assets/3.jpg" alt="Dolphin in Ocean">
+                <img src="assets/4.jpg" alt="Panda in Bamboo Forest">
+                <img src="assets/5.jpg" alt="Elephant in Savannah">
+                <img src="assets/6.jpg" alt="Wolf in Snow">
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="section">
+            <div class="quiz-container" id="quizContainer">
+                <h3>Quiz Time</h3>
+                <img id="quizImage" class="quiz-image" src="" alt="Quiz Clue">
+                <p id="question" class="question"></p>
+                <div id="options" class="options"></div>
+                <div class="result" id="quizResult"></div>
+            </div>
+        </section>
+
+        <!-- Joke Section -->
+        <section id="joke-section" class="section">
+            <div class="joke-container">
+                <h3>Joke Time</h3>
+                <p id="jokeEmoji">😂</p>
+                <p id="joke"></p>
+                <button onclick="fetchJoke()">Get Another Joke</button>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather-section" class="section">
+            <div class="api-container">
+                <h3>Weather</h3>
+                <input type="text" id="cityInput" placeholder="Enter city name" />
+                <button onclick="getWeather()">Get Weather</button>
+                <p id="weather"></p>
+            </div>
+        </section>
+        <section id="galleryCarousel" class="gallery-section">
+            <div class="carousel-container">
+                <h3>Gallery Carousel</h3>
+                <div class="carousel-images">
+                    <img src="assets/a.jpg" alt="Image 1" class="carousel-image">
+                    <img src="assets/b.jpg" alt="Image 2" class="carousel-image">
+                    <img src="assets/c.jpg" alt="Image 3" class="carousel-image">
+                    <img src="assets/d.jpg" alt="Image 4" class="carousel-image">
+                </div>
+                <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Interactive Web Page</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+/* General Body Styling */
